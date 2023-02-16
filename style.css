@@ -100,7 +100,7 @@ main {
   background-color: hsla(178, 100%, 50%, 0.55);
   opacity: 0;
   cursor: pointer;
-  transition: opacity .5s ease-in;
+  transition: opacity .3s ease-in;
 }
 
 .image-container:hover::after {
