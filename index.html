@@ -9,22 +9,84 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+      href="./favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
     <!-- <script src="./main.js" defer></script> -->
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
   <body>
-    Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
-    0.041 ETH 3 days left Creation of Jules Wyvern
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+    <main>
+      <h1 class="visually-hidden">NFT Preview Card Component</h1>
+      <article class="card stack">
+        <div class="image-container">
+          <img src="./images/image-equilibrium.jpg" alt="" class="" />
+        </div>
+        <h2>Equilibrium #3429</h2>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="details">
+          <span class="eth">
+            <img class="icon-eth" src="./images/icon-ethereum.svg" />
+            0.041 ETH
+          </span>
+          <span class="timestamp">
+            <img class="icon-clock" src="./images/icon-clock.svg" />
+            3 days left</span
+          >
+        </div>
+        <div class="creator-container">
+          <img
+            class="avatar"
+            src="./images/image-avatar.png"
+            alt="NFT creator Jules Wyvern" />
+          <p class="creator">
+            Creation of
+            <a href="https://www.britannica.com/biography/Jules-Verne"
+              >Jules Wyvern</a
+            >
+          </p>
+        </div>
+      </article>
+    </main>
+    <div class="info">
+      <svg
+        class="icon-info"
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-info-circle"
+        viewBox="0 0 24 24"
+        stroke-width="1.25"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+        <path d="M12 8l.01 0"></path>
+        <path d="M11 12l1 0l0 4l1 0"></path>
+      </svg>
+      <div class="info-content-wrapper">
+        <div class="info-content">
+          <p>
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io/challenges/nft-preview-card-component"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by
+            <a href="https://www.frontendmentor.io/profile/burrijw"
+              >Josh Burri</a
+            >.
+          </p>
+        </div>
+      </div>
     </div>
+    <!-- <footer class="attribution">
+
+    </footer> -->
   </body>
 </html>
