@@ -85,6 +85,26 @@ main {
 .image-container {
   overflow: hidden;
   border-radius: var(--rounded-sm);
+  position: relative;
+  background: var(--cyan);
+}
+
+.image-container::after {
+  content: url('./images/icon-view.svg');
+  display: grid;
+  place-content: center;
+  position: absolute;
+  block-size: 100%;
+  inline-size: 100%;
+  inset: 0;
+  background-color: hsla(178, 100%, 50%, 0.55);
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity .5s ease-in;
+}
+
+.image-container:hover::after {
+  opacity: 1;
 }
 
 .card > h2 {
